@@ -13,7 +13,7 @@ const timeout = setTimeout(() => {
     console.log(current);
 }, 2000);   
 
-/*무한으로 돌수도 있으니까 조심해야함. */
+/*무한으로 돌수도 있으니까 조심해야함.3 */
 let count = 0;
 /*interval: id */
 const interval = setInterval(() => {
