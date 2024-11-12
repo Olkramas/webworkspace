@@ -3,6 +3,7 @@
 const timeout = setTimeout(() => {
     let today = new Date();
     let year = today.getFullYear();
+    /*0을 붙이고 slice를 -2를 해서 끝에서 두자리만 사용하게 됨. 만약 1의 자리만 있으면 0n의 형태로 나오게 됨. */
     let month = ('0' + (today.getMonth() + 1)).slice(-2); //month는 0부터 시작함
     let day = ('0' + today.getDay()).slice(-2);
 
@@ -13,11 +14,12 @@ const timeout = setTimeout(() => {
     console.log(current);
 }, 2000);   
 
+
 /*무한으로 돌수도 있으니까 조심해야함.3 */
 let count = 0;
 /*interval: id */
 const interval = setInterval(() => {
-    console.group('interval %d', count++);  
+    console.log('interval %d', count++);  
     if(count == 3) {
         /*인터벌은 반드시 id값이 들어가야함 */
         clearInterval(interval);

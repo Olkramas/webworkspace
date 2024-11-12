@@ -1,6 +1,8 @@
 //06_crypto.js
 
 //단방향 암호화
+
+/*crypto모듈 가져오기 */
 const crypto = require('crypto');
 const data = 'pw1234';
 

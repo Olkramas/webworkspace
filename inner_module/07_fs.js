@@ -1,5 +1,6 @@
 //07_fs.js
 
+/*fs모듈 가져오기 (파일읽기, 쓰기, 편집, 제거)*/
 const fs = require('fs');
 
 const data ="Hello World!!";
